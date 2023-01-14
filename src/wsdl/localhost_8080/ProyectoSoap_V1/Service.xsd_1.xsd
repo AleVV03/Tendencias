@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.0 (wsit240-7e98ff4; 2017-08-03T21:19:54+0200) JAXWS-RI/2.3.0 JAXWS-API/2.3.0 JAXB-RI/2.3.0 JAXB-API/2.3.0 svn-revision#unknown. --><xs:schema xmlns:tns="http://sv/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://sv/">
+
+<xs:element name="Comparacion" type="tns:Comparacion"/>
+
+<xs:element name="ComparacionResponse" type="tns:ComparacionResponse"/>
+
+<xs:element name="Diccionario" type="tns:Diccionario"/>
+
+<xs:element name="DiccionarioResponse" type="tns:DiccionarioResponse"/>
+
+<xs:element name="Ecuacion" type="tns:Ecuacion"/>
+
+<xs:element name="EcuacionResponse" type="tns:EcuacionResponse"/>
+
+<xs:element name="Euro_Dollar" type="tns:Euro_Dollar"/>
+
+<xs:element name="Euro_DollarResponse" type="tns:Euro_DollarResponse"/>
+
+<xs:element name="FormulaSuma" type="tns:FormulaSuma"/>
+
+<xs:element name="FormulaSumaResponse" type="tns:FormulaSumaResponse"/>
+
+<xs:element name="Login" type="tns:Login"/>
+
+<xs:element name="LoginResponse" type="tns:LoginResponse"/>
+
+<xs:element name="Movimiento_Uniforme" type="tns:Movimiento_Uniforme"/>
+
+<xs:element name="Movimiento_UniformeResponse" type="tns:Movimiento_UniformeResponse"/>
+
+<xs:element name="OperacionMate" type="tns:OperacionMate"/>
+
+<xs:element name="OperacionMateResponse" type="tns:OperacionMateResponse"/>
+
+<xs:element name="Operacione_Basicas" type="tns:Operacione_Basicas"/>
+
+<xs:element name="Operacione_BasicasResponse" type="tns:Operacione_BasicasResponse"/>
+
+<xs:element name="Potencia" type="tns:Potencia"/>
+
+<xs:element name="PotenciaResponse" type="tns:PotenciaResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:complexType name="FormulaSuma">
+<xs:sequence>
+<xs:element name="parametro_S" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="FormulaSumaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Comparacion">
+<xs:sequence>
+<xs:element name="parameter" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ComparacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Movimiento_Uniforme">
+<xs:sequence>
+<xs:element name="v" type="xs:int"/>
+<xs:element name="t" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Movimiento_UniformeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Diccionario">
+<xs:sequence>
+<xs:element name="key" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DiccionarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Euro_Dollar">
+<xs:sequence>
+<xs:element name="Valor" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Euro_DollarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Operacione_Basicas">
+<xs:sequence>
+<xs:element name="num1" type="xs:int"/>
+<xs:element name="num2" type="xs:int"/>
+<xs:element name="Opcion" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Operacione_BasicasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Ecuacion">
+<xs:sequence>
+<xs:element name="valor_ec1" type="xs:int"/>
+<xs:element name="valor_ec2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EcuacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Login">
+<xs:sequence>
+<xs:element name="user" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LoginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Potencia">
+<xs:sequence>
+<xs:element name="base" type="xs:double"/>
+<xs:element name="exponente" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PotenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OperacionMate">
+<xs:sequence>
+<xs:element name="numero_1" type="xs:int"/>
+<xs:element name="numero_2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OperacionMateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

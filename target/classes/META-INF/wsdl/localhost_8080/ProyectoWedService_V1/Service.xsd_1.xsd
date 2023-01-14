@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.0 (wsit240-7e98ff4; 2017-08-03T21:19:54+0200) JAXWS-RI/2.3.0 JAXWS-API/2.3.0 JAXB-RI/2.3.0 JAXB-API/2.3.0 svn-revision#unknown. --><xs:schema xmlns:tns="http://sw/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://sw/">
+
+<xs:element name="Iniciar_seccion" type="tns:Iniciar_seccion"/>
+
+<xs:element name="Iniciar_seccionResponse" type="tns:Iniciar_seccionResponse"/>
+
+<xs:element name="RegitrarUsuario" type="tns:RegitrarUsuario"/>
+
+<xs:element name="RegitrarUsuarioResponse" type="tns:RegitrarUsuarioResponse"/>
+
+<xs:element name="UpdateSaldo" type="tns:UpdateSaldo"/>
+
+<xs:element name="UpdateSaldoResponse" type="tns:UpdateSaldoResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:complexType name="Iniciar_seccion">
+<xs:sequence>
+<xs:element name="Usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="Password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Iniciar_seccionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdateSaldo">
+<xs:sequence>
+<xs:element name="Usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="saldo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdateSaldoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RegitrarUsuario">
+<xs:sequence>
+<xs:element name="Usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="Password" type="xs:string" minOccurs="0"/>
+<xs:element name="repeat" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RegitrarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
